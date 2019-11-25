@@ -1,0 +1,13 @@
+[Unit]
+Description=workR demo service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+ExecStart=/opt/dotnet/dotnet /home/leovolpatto/Desktop/leptons/workR/bin/Debug/netcoreapp3.0/workR.dll
+Restart=always
+Type=simple
+User=leovolpatto
+
+[Install]
+WantedBy=multi-user.target

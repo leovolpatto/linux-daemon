@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "workR": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

@@ -1,13 +1,13 @@
 [Unit]
-Description=workR demo service
+Description=workR service
 After=network.target
 StartLimitIntervalSec=0
 
 [Service]
-ExecStart=/opt/dotnet/dotnet /home/leovolpatto/Desktop/leptons/workR/bin/Debug/netcoreapp3.0/workR.dll
+ExecStart=[path to the dotnet bin here, ie: /opt/dotnet/dotnet] "[path to your workR.dll]"
 Restart=always
 Type=simple
-User=leovolpatto
+User=[your user, or user you want to use to run this daemon here]
 
 [Install]
 WantedBy=multi-user.target
